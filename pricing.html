@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maid in India - Pricing and Plans</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="page-pricing">
+    <header class="site-header">
+      <div class="logo-mini" aria-hidden>
+        <img src="logo.jpg" alt="Maid in India logo" />
+      </div>
+      <div class="brand-name">Maid in India</div>
+    </header>
+
+    <nav class="nav" style="position:fixed;right:24px;top:22px;z-index:800">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="safety.html">Safety</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="pricing.html" class="active">Pricing</a>
+      <a data-nav href="contact.html">Contact</a>
+    </nav>
+
+    <main class="page">
+      <div class="container">
+        <section>
+          <h1>Pricing</h1>
+          <p style="color:var(--muted)">Choose a service, select the engagement type and view example price ranges.</p>
+
+          <div class="pricing-flow card" style="margin-top:18px;padding:18px">
+            <div style="margin-bottom:12px">
+              <label for="serviceSelect" style="display:block;margin-bottom:6px;font-weight:1000">Step 1 — Select a Service</label>
+              <select id="serviceSelect">
+                <option value="cooking">Cooking</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="washing">Washing & Laundry</option>
+                <option value="babysitter">Babysitter / Nanny</option>
+                <option value="elderly">Elderly Day Care</option>
+                <option value="married-couple">Married Couple Domestic Help</option>
+                <option value="japa">Professional Japa & Postnatal Care</option>
+                <option value="massage">Massage Support (Women & Children)</option>
+                <option value="fulltime">Full-Time Maid</option>
+                <option value="parttime">Part-Time Maid</option>
+                <option value="livein">Live-In Support</option>
+                <option value="hourly">Hourly Visit</option>
+              </select>
+            </div>
+          <style>
+            #serviceSelect {
+  color: #fbfafa !important;
+  background-color: #fff !important;
+  -webkit-text-fill-color: #fcfcfc;
+}
+
+#serviceSelect option {
+  color: #000;
+  background-color: #fff;
+}
+
+          </style>
+            <div style="margin-bottom:12px">
+              <div style="display:block;margin-bottom:6px;font-weight:700">Step 2 — Choose type</div>
+              <label style="margin-right:12px"><input type="radio" name="engagementType" value="fulltime" /> Full-Time</label>
+              <label style="margin-right:12px"><input type="radio" name="engagementType" value="parttime" /> Part-Time</label>
+              <label><input type="radio" name="engagementType" value="hourly" /> Hourly Visit</label>
+            </div>
+
+            <div style="margin-bottom:12px">
+              <label for="timingSelect" style="display:block;margin-bottom:6px;font-weight:700">Step 3 — Choose timing / duration</label>
+              <select id="timingSelect" class="timing-select">
+                <option value="one-time">One-time / Single Visit</option>
+                <option value="weekly">Weekly</option>
+                <option value="biweekly">Bi-weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="custom">Custom duration</option>
+              </select>
+            </div>
+            <style>
+#timingSelect {
+  color: #fbfafa !important;
+  background-color: #fff !important;
+  -webkit-text-fill-color: #fcfcfc;
+}
+
+#timingSelect option {
+  color: #000;
+  background-color: #fff;
+}
+
+          </style>
+            <div id="priceResult" style="margin-top:12px;padding:12px;border-radius:10px;" class="result-card">
+              <h4 style="margin:0 0 8px">Step 4 — Example price ranges</h4>
+              <div id="priceRanges" style="color:var(--muted)">Select a service, type and timing to see sample ranges.</div>
+              <p style="margin-top:10px;color:var(--muted);font-size:13px">Policy: Pay after maid joins · Free replacement · Transparent payouts.</p>
+              <div style="margin-top:12px"><button id="checkoutBtn" class="checkout" disabled>Proceed to Checkout</button></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

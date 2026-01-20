@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maid in India - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="page-contact">
+    <header class="site-header">
+      <div class="logo-mini" aria-hidden>
+        <img src="logo.jpg" alt="Maid in India logo" />
+      </div>
+      <div class="brand-name">Maid in India</div>
+    </header>
+
+    <nav class="nav" style="position:fixed;right:24px;top:22px;z-index:800">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="safety.html">Safety</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="pricing.html">Pricing</a>
+      <a data-nav href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <main class="page">
+      <div class="container">
+        <section>
+          <div style="text-align:center;margin-bottom:12px">
+            <h1>Contact</h1>
+            <p style="color:var(--muted);max-width:720px;margin:8px auto 0">Request a callback or reach out directly.</p>
+          </div>
+          <div class="contact-card" style="margin-top:18px">
+            <form id="contactForm">
+              <div style="margin-bottom:8px"><input name="name" required placeholder="Full name" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:transparent;color:inherit"/></div>
+              <div style="margin-bottom:8px"><input name="phone" required placeholder="Phone number" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:transparent;color:inherit"/></div>
+              <div style="margin-bottom:8px"><input name="location" placeholder="Location (city / area)" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:transparent;color:inherit"/></div>
+              <div style="margin-bottom:8px"><textarea name="details" placeholder="Details / Message" rows="4" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:transparent;color:inherit"></textarea></div>
+              <div><button class="btn primary" type="submit" style="cursor:pointer;padding:10px 18px;border-radius:8px;border:0;background:var(--red);color:#fff;font-weight:700">Request Callback</button></div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
