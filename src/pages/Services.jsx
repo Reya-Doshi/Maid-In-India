@@ -24,7 +24,7 @@ export default function Services() {
           {[...servicesData, ...servicesData].map((s, i) => (
             <div key={i} className="w-80 flex-shrink-0 mx-4 cursor-pointer" onClick={() => setSelectedService(s)}>
               <div className="h-96 rounded-2xl overflow-hidden relative group border shadow-md bg-gray-200">
-                <img src={`/${s.img}`} alt={s.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src={s.img} alt={s.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
                 <div className="absolute bottom-0 p-8 text-white w-full transition-transform duration-300 group-hover:translate-y-[-5px]">
                   <h3 className="text-2xl font-black drop-shadow-md">{s.title}</h3>

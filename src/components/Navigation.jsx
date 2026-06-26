@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Menu } from 'lucide-react';
+import logo from '../assets/logo.jpg';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function Navigation() {
     <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md py-4 border-b border-gray-200 transition-all duration-500 shadow-sm select-none">
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-3 cursor-pointer group" onClick={() => handleNavClick('/')}>
-          <img src="/logo.jpg" alt="Logo" className="w-10 h-10 object-contain rounded-full bg-white group-hover:shadow-[0_0_8px_rgba(138,3,3,0.4)] transition-all" onError={(e) => { e.target.style.display = 'none'; }} />
+          <img src={logo} alt="Logo" className="w-10 h-10 object-contain rounded-full bg-white group-hover:shadow-[0_0_8px_rgba(138,3,3,0.4)] transition-all" onError={(e) => { e.target.style.display = 'none'; }} />
           <span className="text-gray-900 font-bold text-xl tracking-wider">MAID IN INDIA</span>
         </div>
 
